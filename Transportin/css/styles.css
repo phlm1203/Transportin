@@ -1,0 +1,182 @@
+.cabecalho {
+    background-color: #ffbb00;
+    color: white;
+    font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* Fonte personalizada*/;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15); /* colocar a sombrinha */
+    padding: var(--header-height) 40px;
+}
+.logo {
+    font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* Fonte personalizada*/;
+    color: white;
+    margin-right: 20px;
+}
+.texto-logo {
+    display: flex;
+    flex-direction: column; /* deixa o h1 e o h3 um embaixo do outro */
+    line-height: 0 /* controla o espaçamento*/;
+}
+.slogan {
+    font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* Fonte personalizada*/;
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;;
+}
+
+/* Agrupa a imagem + título lado a lado */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Tamanho da imagem da logo */
+.logo-imagem {
+    width: 100px;    /* pode ajustar */
+    height: auto;
+    margin-right: 15px;
+}
+
+/* Estilza o Menu */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 20px; /* Espaçamento entre os links */
+    font-size: 18px;
+}
+
+/* Efeito hover bonitinho */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo especial para o Cadastro */
+.nav-links .destaque {
+    background-color: #171b3e;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.quadros {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+
+.quadros-2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);  /*<<< Para colocar 3 cards em cada linha */
+    gap: 100px;        /* <<<<<< Para definir o espaço */                       
+    justify-content: center;     /*<<<<<< Para centralizar o grid */            
+    margin: 50px 0;
+}
+
+.cards {
+    background-color:#ffbb00;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* DIMINUI O TAMANHO DO CARD */
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.cards-2 {
+    background-color:#ffbb00;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* DIMINUI O TAMANHO DO CARD */
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+/*Para que os cards virem links*/
+.card-link {
+    text-decoration: none;  /* remove sublinhado */
+    color:#171b3e;         /* mantém as cores do card */
+    display: block;         /* deixa o link ocupar o card inteiro */
+}
+
+/*Transiçaõzinha*/
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/*Transiçaõzinha  2*/
+.cards-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.bem-vindo {
+     font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* Fonte personalizada*/;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px; /* espaço entre texto e imagens */
+}
+
+.texto-inicio {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+    color:#171b3e;
+    text-align: justify;
+}
+
+.logo-2 {
+    width: 250px;   /* Ajuste de tamanho */
+    margin: 20px 0; /* Espaço entre o título e o texto */
+}
+
+.foto-equipe {
+    width: 350px;   /* Ajuste de tamanho */
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15); /* colocar a sombrinha */
+    margin: 20px 0; /* Espaço entre o título e o texto */
+}
+
+.coluna-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre as imagens */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif /* Fonte personalizada*/;
+}
+
+footer {
+    background-color: #171b3e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-family:'Chunk Five', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+    /* Fonte personalizada*/; 
+}
+
+.p-servico {
+    font-size: 20px;
+    line-height: 1.6;
+    color:#171b3e;
+    text-align: center;
+    margin-top: 20px;
+
+}
