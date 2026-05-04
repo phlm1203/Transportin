@@ -1,0 +1,157 @@
+/* Fundo igual página principal */
+
+/* Estilização do card*/
+body {
+  margin: 0;
+  height: 100vh;
+  background: url("../Images/fundotelas.jpg") center/cover no-repeat;
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+}
+
+/* Camada com blur */
+.overlay {
+  backdrop-filter: blur(8px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     /* centraliza horizontal */
+  padding: 40px 20px;
+}
+
+.mini-header {
+ text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.mini-logo {
+  width: 220px;
+}
+
+.countdown {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px; /* espaço antes do card */
+   margin-top: -30px;
+}
+/* Fim do Header */
+
+
+/* Card central */
+.card {
+  background: #b7d3df;
+  width: 70%;
+  max-height: 80vh;
+  padding: 30px;
+  border-radius: 12px;
+  overflow-y: auto; /* ativa rolagem */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.header-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.header-card a {
+  text-decoration: none;
+  color: #1b5e8c;
+  transition: 0.3s;
+}
+
+.header-card a:hover {
+  color: #0b2789;
+  transform: scale(1.05);
+}
+
+.divider {
+  color: #1b5e8c;
+}
+
+/* Scroll estilizado */
+.card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: #3a6b85;
+  border-radius: 10px;
+}
+
+/* Conteúdo lado a lado */
+.content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+ color: #0b2789;
+}
+
+.text {
+  flex: 2;
+  color: #0b2789;
+}
+/* Fim da estilixzação do card */
+
+.titulo-personagens {
+  text-align: center;
+  font-size: 28px;
+  color: #0d3b66;
+  margin-top: 30px;
+}
+
+.aviso {
+  text-align: center;
+  font-weight: bold;
+  color: #0d3b66;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.personagens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 por linha */
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Cada personagem */
+.personagem {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.personagem img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.personagem p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+/* Efeito hover */
+.personagem:hover {
+  transform: scale(1.05);
+}
